@@ -17,7 +17,7 @@ p{
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
@@ -182,7 +182,7 @@ h1{
       top: 0;
       right: 0;
       background-color: #fefdf9;
-      height: 100vh;
+      height: 100%;
       z-index: 3;
     }
     #first{
@@ -258,5 +258,9 @@ h1{
 @media screen and (max-width:400px){
     .container{
         width: 100%;
+        min-width: 400px;
+    }
+    header{
+        min-width: 400px;
     }
 }
