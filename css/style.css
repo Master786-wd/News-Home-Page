@@ -35,7 +35,7 @@ header{
     padding-top: 70px;
     padding-bottom: 50px;
 }
-#desktop{
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,9 +58,13 @@ ul > li > a{
 ul > li > a:hover{
     color: hsl(5, 85%, 63%);
 }
-#mobile{
+#ham{
     display: none;
 }
+#closebtn{
+    display: none;
+}
+
 .hero img{
     width: 90%;
     margin-bottom: 30px;
@@ -155,7 +159,7 @@ h1{
 .container{
    width: 90%;
 }
-#desktop{
+header{
     width:90%;
 }
 }
@@ -164,13 +168,23 @@ h1{
     padding-top: 35px;
     padding-bottom: 35px;
     }
-    #mobile{
+    #ham{
+        display: block;
+        border: none;
+        background: none;
+    }
+    #closebtn{
+        display: block;
+        border: none;
+        background: none;
+    }
+    #header{
         display: flex;
-        justify-content: space-between;
         width: 95%;
+        justify-content: space-between;
         margin: 0 auto;
     }
-    #mobile #logo{
+    #desktop #logo{
         height: 35px;
     }
     #ham img{
@@ -206,9 +220,6 @@ h1{
     }
     #closebtn img{
         float: right;
-    }
-    #desktop{
-        display: none;
     }
     .container{
    width: 95%;
